@@ -19,6 +19,10 @@ const Home = () => {
       label: "Login with otp",
       path: "/login-otp",
     },
+    {
+      label: "Loader",
+      path: "/loader",
+    },
   ];
   return (
     <>
