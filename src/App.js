@@ -6,6 +6,7 @@ import Throttling from "./pages/Throttling";
 import TicTacToe from "./pages/TicTacToe";
 import LoginWithPhoneAndOTP from "./pages/LoginWithPhoneAndOTP";
 import Loader from "./pages/Loader";
+import ProgressBar from "./pages/ProgressBar";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tic-tac-toe" element={<TicTacToe />} />
           <Route path="/login-otp" element={<LoginWithPhoneAndOTP />} />
           <Route path="/loader" element={<Loader />} />
+          <Route path="/progress-bar" element={<ProgressBar />} />
         </Routes>
       </div>
     </div>

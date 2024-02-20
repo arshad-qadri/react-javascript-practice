@@ -23,6 +23,10 @@ const Home = () => {
       label: "Loader",
       path: "/loader",
     },
+    {
+      label: "Progress Bar",
+      path: "/progress-bar",
+    },
   ];
   return (
     <>
