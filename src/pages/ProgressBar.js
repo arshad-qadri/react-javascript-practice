@@ -20,7 +20,11 @@ const ProgressBar = () => {
     <div className="w-96  m-auto p-4">
       <h1 className="text-center mb-3">Progress Bar</h1>
       <div className="bg-gray-100 rounded-full text-center relative overflow-hidden  w-full h-10">
-        <div className={`absolute top-0 left-0 w-full h-full bg-transparent z-20 flex justify-center items-center font-bold ${progressPercent<=50 ?"text-black":"text-white"}`}>
+        <div
+          className={`absolute top-0 left-0 w-full h-full bg-transparent z-20 flex justify-center items-center font-bold ${
+            progressPercent <= 50 ? "text-black" : "text-white"
+          }`}
+        >
           {progressPercent}%
         </div>
         <div

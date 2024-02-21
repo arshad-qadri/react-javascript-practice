@@ -7,6 +7,7 @@ import TicTacToe from "./pages/TicTacToe";
 import LoginWithPhoneAndOTP from "./pages/LoginWithPhoneAndOTP";
 import Loader from "./pages/Loader";
 import ProgressBar from "./pages/ProgressBar";
+import GridLights from "./pages/GridLights";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login-otp" element={<LoginWithPhoneAndOTP />} />
           <Route path="/loader" element={<Loader />} />
           <Route path="/progress-bar" element={<ProgressBar />} />
+          <Route path="/grid-lights" element={<GridLights />} />
         </Routes>
       </div>
     </div>

@@ -27,6 +27,10 @@ const Home = () => {
       label: "Progress Bar",
       path: "/progress-bar",
     },
+    {
+      label: "Grid Lights",
+      path: "/grid-lights",
+    },
   ];
   return (
     <>
