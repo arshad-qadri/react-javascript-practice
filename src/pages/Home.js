@@ -34,7 +34,7 @@ const Home = () => {
   ];
   return (
     <>
-      <div className="">
+      <div className="p-4">
         <ul>
           {links.map((item, index) => (
             <li className="text-xl text-blue-400 mb-1" key={index}>

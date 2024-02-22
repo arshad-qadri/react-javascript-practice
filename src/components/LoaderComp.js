@@ -1,14 +1,8 @@
 import React from "react";
-import LoaderComp from "../components/LoaderComp";
-import Main from "../components/Main";
-
-const Loader = () => {
-  const code = `
-import React from "react";
 
 const LoaderComp = () => {
   return (
-    <div className=" flex justify-center items-center gap-10 flex-wrap">
+    <div className=" flex justify-center items-center gap-10 flex-wrap mt-10">
       {/* loader 1 */}
       <div>
         <div className="bars w-[60px] h-8  relative">
@@ -29,44 +23,3 @@ const LoaderComp = () => {
 };
 
 export default LoaderComp;
-
-`
-const css = `
-/* Loader 1 css */
-.bars div {
-  animation: animate 500ms linear alternate-reverse infinite;
-}
-
-.bars div:nth-child(2) {
-  animation-delay: 150ms;
-}
-.bars div:nth-child(3) {
-  animation-delay: 300ms;
-}
-.bars div:nth-child(4) {
-  animation-delay: 400ms;
-}
-.bars div:nth-child(5) {
-  animation-delay: 500ms;
-}
-@keyframes animate {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-/* Loader 2 css */
-.loader  {
-    animation: rotate 1s infinite;  
-    height: 50px;
-    width: 50px;
-  }
-  
-`
-  return <Main Component={LoaderComp} code={code} css={css} />
-};
-
-export default Loader;

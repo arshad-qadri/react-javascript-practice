@@ -7,7 +7,7 @@ import TicTacToe from "./pages/TicTacToe";
 import LoginWithPhoneAndOTP from "./pages/LoginWithPhoneAndOTP";
 import Loader from "./pages/Loader";
 import ProgressBar from "./pages/ProgressBar";
-import GridLights from "./pages/GridLights";
+import GridLight from "./pages/GridLight";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         Practice Javascript
       </div>
       <Link to={"/"}><button className="bg-gray-800 text-white py-2 px-4 m-4 rounded-lg font-semibold">Back</button></Link>
-      <div className="p-5 h-[50vh]">
+      <div className=" h-[50vh]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/debounce" element={<Debouncing />} />
@@ -27,7 +27,7 @@ function App() {
           <Route path="/login-otp" element={<LoginWithPhoneAndOTP />} />
           <Route path="/loader" element={<Loader />} />
           <Route path="/progress-bar" element={<ProgressBar />} />
-          <Route path="/grid-lights" element={<GridLights />} />
+          <Route path="/grid-lights" element={<GridLight />} />
         </Routes>
       </div>
     </div>

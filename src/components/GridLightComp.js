@@ -12,7 +12,7 @@ const Cell = ({ index, activatedCell, setActiveCell }) => {
   );
 };
 
-const GridLights = () => {
+const GridLightCopm = () => {
   const [activatedCell, setActiveCell] = useState([]);
   const grids = [
     [1, 1, 1],
@@ -33,6 +33,7 @@ const GridLights = () => {
         });
       }, 500);
     }
+    // eslint-disable-next-line
   }, [activatedCell]);
 
   return (
@@ -60,4 +61,4 @@ const GridLights = () => {
   );
 };
 
-export default GridLights;
+export default GridLightCopm;
