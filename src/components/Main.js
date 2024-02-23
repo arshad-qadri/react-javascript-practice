@@ -19,7 +19,7 @@ const Main = ({ Component, code, css }) => {
           {isCode ? <FaEye size={25} /> : <FaCode size={25} />}
         </button>
       </div>
-      <div style={{ height: "100%", overflow: "auto" }}>
+      <div className="" style={{ height: "100%", overflow: "auto" }}>
         {isCode ? <SyntaxHighlight code={code} css={css} /> : <Component />}
       </div>
     </div>

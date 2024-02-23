@@ -31,6 +31,10 @@ const Home = () => {
       label: "Grid Lights",
       path: "/grid-lights",
     },
+    {
+      label: "Ecommerce",
+      path: "/ecommerce",
+    },
   ];
   return (
     <>

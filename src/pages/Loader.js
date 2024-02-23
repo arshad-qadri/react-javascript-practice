@@ -59,8 +59,7 @@ const css = `
 }
 
 /* Loader 2 css */
-.loader  {
-    animation: rotate 1s infinite;  
+.loader  { 
     height: 50px;
     width: 50px;
   }

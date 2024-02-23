@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 const OTPInput = () => {
   const [otp, setOtp] = useState(new Array(4).fill(""));
   const inputRef = useRef([]);
-//   console.log(inputRef);
   const  handleChange =  (e, ind) => {
     const { value } = e.target;
     if(isNaN(value)) return

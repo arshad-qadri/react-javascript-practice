@@ -1,9 +1,3 @@
-import React from 'react'
-import TicTacToeComp from '../components/TicTacToeComp'
-import Main from '../components/Main'
-
-const TicTacToe = () => {
-  const code = `
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -48,9 +42,10 @@ const TicTacToeComp = () => {
   };
   useEffect(() => {
     if (gameStatus) {
-      alert(\`\${
+      alert(
+        `${
           gameStatus?.toLowerCase()?.includes("winner") ? "Bhoom," : ""
-        } \${gameStatus} !\`
+        } ${gameStatus} !`
       );
     }
     // console.log("gameStatus===", gameStatus);
@@ -63,14 +58,15 @@ const TicTacToeComp = () => {
           boxs[x].value === boxs[y].value &&
           boxs[x].value === boxs[z].value
         ) {
-          setGameStatus(\`Winner is \${boxs[x].value}\`);
+          setGameStatus(`Winner is ${boxs[x].value}`);
           return;
         }
       }
     }
     if (boxs.every((item) => item.value !== "")) {
-      setGameStatus(\`Match is draw\`);
+      setGameStatus(`Match is draw`);
     }
+    // eslint-disable-next-line
   }, [boxs]);
 
   return (
@@ -106,43 +102,3 @@ const TicTacToeComp = () => {
 };
 
 export default TicTacToeComp;
-`
-const css = `
-// Css
-.tic-tac-toe-container {
-  min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.tic-tac-toe {
-  width: 200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid #070707;
-}
-.box {
-  height: 60px;
-  border: 1px solid #070707;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  cursor: pointer;
-}
-.btn {
-  padding: 5px 20px;
-  background-color: orange;
-  margin-top: 10px;
-}
-h1 {
-  font-size: 20px;
-  font-weight: bold;
-}`
-  return (
-    <Main Component={TicTacToeComp} code={code} css={css}/>
-  )
-}
-
-export default TicTacToe

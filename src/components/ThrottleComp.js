@@ -1,10 +1,4 @@
-import React from 'react'
-import Main from '../components/Main'
-import ThrottleComp from '../components/ThrottleComp'
-
-const Throttling = () => {
-  const code = `
-  import React, { useState } from "react";
+import React, { useState } from "react";
 // import useThrottle from "../hooks/Throttle";
 
 const ThrottleComp = () => {
@@ -55,32 +49,3 @@ const ThrottleComp = () => {
 };
 
 export default ThrottleComp;
-
-// Custome Hook
-import React, { useRef } from "react";
-
-const useThrottle = () => {
-  const throttleSeed = useRef(null);
-
-  const throttleFunction = useRef((func, delay = 200) => {
-    if (!throttleSeed.current) {
-      // Call the callback immediately for the first time
-      func();
-      throttleSeed.current = setTimeout(() => {
-        throttleSeed.current = null;
-      }, delay);
-    }
-  });
-
-  return throttleFunction.current;
-};
-
-export default useThrottle;
-
-`
-  return (
-    <Main Component={ThrottleComp} code={code} />
-  )
-}
-
-export default Throttling
