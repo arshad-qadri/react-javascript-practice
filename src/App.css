@@ -80,10 +80,46 @@ input[type="number"] {
 }
 
 /* Loader 2 css */
-.loader  {
-    /* animation: rotate 1s infinite;   */
-    height: 50px;
-    width: 50px;
-  }
-  
-  
+.loader {
+  /* animation: rotate 1s infinite;   */
+  height: 50px;
+  width: 50px;
+}
+
+
+/* modern navigation bar */
+.menu-item {
+  border-radius: 20px 0 0 20px;
+}
+.bottombar,
+.topbar {
+  position: absolute;
+  height: 10px;
+  right: 0;
+  width: 100%;
+  background: rgb(17 24 39);
+}
+.topbar {
+  top: -10px;
+}
+
+.bottombar {
+  bottom: -10px;
+}
+
+.bottombar::after,
+.topbar::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  left: 0;
+  right: 0;
+  background: #d1d5db;
+}
+.bottombar::after {
+  border-radius: 0 10px 0 0;
+}
+.topbar::after {
+  border-radius: 0 0 10px 0;
+}

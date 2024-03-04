@@ -9,6 +9,8 @@ import Loader from "./pages/Loader";
 import ProgressBar from "./pages/ProgressBar";
 import GridLight from "./pages/GridLight";
 import EcommercePage from "./pages/EcommercePage";
+import PieChart from "./pages/PieChart";
+import ModerNavigation from "./pages/ModerNavigation";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/progress-bar" element={<ProgressBar />} />
           <Route path="/grid-lights" element={<GridLight />} />
           <Route path="/ecommerce" element={<EcommercePage />} />
+          <Route path="/piechart" element={<PieChart />} />
+          <Route path="/modern-navigation" element={<ModerNavigation />} />
         </Routes>
       </div>
     </div>

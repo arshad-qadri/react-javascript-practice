@@ -35,6 +35,14 @@ const Home = () => {
       label: "Ecommerce",
       path: "/ecommerce",
     },
+    {
+      label: "Piechart",
+      path: "/piechart",
+    },
+    {
+      label: "Modern Navigation",
+      path: "/modern-navigation",
+    },
   ];
   return (
     <>
