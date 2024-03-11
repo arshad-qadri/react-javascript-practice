@@ -12,13 +12,13 @@ const SyntaxHighlight = ({ code, css }) => {
       >
         {code}
       </SyntaxHighlighter>
-      <SyntaxHighlighter
+     {css && <SyntaxHighlighter
         language="css"
         style={atomOneDark}
         customStyle={{ padding: "20px" }}
       >
         {css}
-      </SyntaxHighlighter>
+      </SyntaxHighlighter>}
     </div>
   );
 };

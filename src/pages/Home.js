@@ -43,6 +43,10 @@ const Home = () => {
       label: "Modern Navigation",
       path: "/modern-navigation",
     },
+    {
+      label: "Quiz",
+      path: "/quiz",
+    },
   ];
   return (
     <>

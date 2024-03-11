@@ -11,6 +11,7 @@ import GridLight from "./pages/GridLight";
 import EcommercePage from "./pages/EcommercePage";
 import PieChart from "./pages/PieChart";
 import ModerNavigation from "./pages/ModerNavigation";
+import Quiz from "./pages/Quiz";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/ecommerce" element={<EcommercePage />} />
           <Route path="/piechart" element={<PieChart />} />
           <Route path="/modern-navigation" element={<ModerNavigation />} />
+          <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>
     </div>
